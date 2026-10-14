@@ -1,0 +1,8 @@
+# Duplicate backup folder
+assets/posts do ig/
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
