@@ -460,20 +460,164 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); }
   z-index: 1;
 }
 
+/* Stories Progress Bar */
+.stories-progress-bar {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.story-seg {
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.story-seg-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #ffffff;
+  border-radius: inherit;
+  transition: width 0.1s linear;
+}
+
+.story-seg.completed .story-seg-fill {
+  width: 100% !important;
+}
+
+/* Story Top Info & Sound Button */
+.story-top-overlay {
+  position: absolute;
+  top: 24px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.story-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 4px 10px 4px 4px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.story-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+}
+
+.story-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-username {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.story-tag {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.1;
+}
+
+.story-sound-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.story-sound-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.08);
+}
+
+.story-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 8;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+.hero-banner-card:hover .story-nav-btn {
+  opacity: 1;
+}
+
+.story-prev-btn {
+  left: 10px;
+}
+
+.story-next-btn {
+  right: 10px;
+}
+
+.story-nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
 .hero-video {
   width: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
   object-position: center 14%;
-  transform: scale(1.38);
-  transform-origin: center 14%;
   display: block;
   border-radius: inherit;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.hero-banner-card:hover .hero-video {
-  transform: scale(1.42);
+  transition: opacity 0.3s ease;
 }
 
 /* Badge pinned at bottom cleanly covering Android camera buttons */
@@ -482,10 +626,10 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); }
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg, rgba(107, 20, 38, 0.85), rgba(74, 13, 26, 0.92));
+  background: linear-gradient(135deg, rgba(107, 20, 38, 0.88), rgba(74, 13, 26, 0.94));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  padding: 0.7rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 0 0 32px 32px;
   box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -493,6 +637,7 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); }
   gap: 0.85rem;
   border-top: 1px solid rgba(255, 255, 255, 0.22);
   z-index: 5;
+  transition: all 0.3s ease;
 }
 
 .floating-badge-icon {
@@ -507,6 +652,7 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); }
   justify-content: center;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .floating-badge-text h5 {
@@ -586,7 +732,49 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); }
   margin-top: 0.8rem;
 }
 
-/* Lookbook / Galeria de Fotos Jeans */
+/* Catálogo Separado: Jeans e Cama, Mesa e Banho */
+.catalog-category-block {
+  margin-bottom: 4.5rem;
+  position: relative;
+}
+
+.catalog-category-block:last-child {
+  margin-bottom: 0;
+}
+
+.category-header {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(107, 20, 38, 0.08);
+  position: relative;
+}
+
+.category-title-badge {
+  margin-bottom: 0.5rem;
+}
+
+.category-main-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.category-subtitle {
+  font-size: 1.02rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  max-width: 780px;
+}
+
+.catalog-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(107, 20, 38, 0.15), rgba(196, 139, 89, 0.35), rgba(107, 20, 38, 0.15), transparent);
+  margin: 4.5rem 0 3.5rem;
+}
+
 .lookbook-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

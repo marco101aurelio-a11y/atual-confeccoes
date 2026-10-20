@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atual Confecções | Moda Feminina, Masculina e Jeans</title>
+  <title>Atual Confecções | Jeans Feminino & Enxovais (Cama, Mesa e Banho)</title>
   <meta name="description"
-    content="Atual Confecções em Campo Grande - MS. Fabricação própria de jeans feminino, moda fitness e catálogo completo para você conquistar sua independência financeira com revenda consignada.">
+    content="Atual Confecções em Campo Grande - MS. Revenda consignada de Jeans e Enxovais de Cama, Mesa e Banho sem investimento inicial. Conquiste sua independência financeira em todo o Mato Grosso do Sul.">
   <meta name="keywords"
-    content="Atual Confecções, revenda consignada, jeans feminino, moda fitness, independência financeira, atacado roupas Campo Grande MS">
-  <meta property="og:title" content="Atual Confecções | Moda Feminina e Revenda Consignada">
+    content="Atual Confecções, revenda consignada, jeans feminino, enxovais, cama mesa e banho, Campo Grande MS, Mato Grosso do Sul, independência financeira">
+  <meta property="og:title" content="Atual Confecções | Jeans e Enxovais com Revenda Consignada">
   <meta property="og:description"
-    content="Não é só roupa. É oportunidade, é renda, é liberdade. Conquiste sua independência financeira com revenda consignada sem investimento inicial.">
+    content="Não é só roupa. É oportunidade, é renda, é liberdade. Revenda consignada de Jeans e Enxovais Cama, Mesa e Banho sem investimento inicial.">
   <meta property="og:image" content="assets/banner_9_16.jpg">
   <meta property="og:type" content="website">
 
@@ -44,7 +44,7 @@
         <nav>
           <ul class="nav-links" id="navLinks">
             <li><a href="#inicio" class="nav-link">Início</a></li>
-            <li><a href="#colecoes" class="nav-link">Coleção Jeans</a></li>
+            <li><a href="#colecoes" class="nav-link">Jeans & Enxovais</a></li>
             <li><a href="#revenda" class="nav-link">Revenda Consignada</a></li>
             <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
             <li><a href="#duvidas" class="nav-link">Dúvidas</a></li>
@@ -78,14 +78,14 @@
       <div class="hero-grid">
         <div class="hero-content">
           <span class="badge-tag">Comece hoje o seu negócio!</span>
-          <h1 class="hero-title">Não é só roupa. É oportunidade, <span>é renda, é liberdade</span></h1>
+          <h1 class="hero-title">Não é só roupa e enxoval. É oportunidade, <span>é renda, é liberdade</span></h1>
 
           <p class="hero-bio-quote">
-            Somos uma empresa que tem como objetivo ajudar mulheres a conquistar sua independência financeira.
+            Somos uma empresa que tem como objetivo ajudar mulheres a conquistar sua independência financeira através da <strong>revenda consignada de Jeans e Enxovais (cama, mesa e banho)</strong> sem investimento inicial.
           </p>
 
           <div class="hero-actions">
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20a%20ganhar%20dinheiro%20com%20revenda%20consignada%20sem%20investir%20nada!"
+            <a href="https://wa.me/5567992386878?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20a%20ganhar%20dinheiro%20com%20revenda%20consignada%20de%20jeans%20e%20enxoval%20sem%20investir%20nada!"
               target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -93,7 +93,7 @@
               </svg>
               Quero Ser Revendedora
             </a>
-            <a href="#colecoes" class="btn btn-secondary">Conhecer alguns dos produtos</a>
+            <a href="#colecoes" class="btn btn-secondary">Conhecer nossos produtos</a>
           </div>
 
           <div class="hero-stats">
@@ -129,29 +129,66 @@
                 </svg>
               </div>
               <div class="stat-content">
-                <h4>Atendemos todo o Brasil</h4>
-                <p>Atendimento presencial em Campo Grande, ou envio seguro para todo o país</p>
+                <h4>Atendemos todo Mato Grosso do Sul</h4>
+                <p>Atendimento presencial em Campo Grande e entregas em todo o estado de MS</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="hero-image-wrapper">
-          <div class="hero-banner-card card-3d reveal" data-tilt>
-            <video class="hero-video" id="heroVideo" autoplay loop muted playsinline poster="assets/banner_9_16.jpg">
-              <source src="assets/video1.mp4" type="video/mp4">
+          <div class="hero-banner-card card-3d reveal" data-tilt id="storyCard">
+            <!-- Stories Progress Segments -->
+            <div class="stories-progress-bar" id="storiesProgress">
+              <div class="story-seg active" data-index="0"><span class="story-seg-fill"></span></div>
+              <div class="story-seg" data-index="1"><span class="story-seg-fill"></span></div>
+              <div class="story-seg" data-index="2"><span class="story-seg-fill"></span></div>
+              <div class="story-seg" data-index="3"><span class="story-seg-fill"></span></div>
+              <div class="story-seg" data-index="4"><span class="story-seg-fill"></span></div>
+            </div>
+
+            <!-- Top Stories Header / Sound button -->
+            <div class="story-top-overlay">
+              <div class="story-user-info">
+                <div class="story-avatar">
+                  <img src="assets/logo.png" alt="Atual Confecções" width="24" height="24">
+                </div>
+                <div class="story-meta">
+                  <span class="story-username">atual.conf</span>
+                  <span class="story-tag" id="storyLiveTag">Bastidores & Estoque</span>
+                </div>
+              </div>
+              <button class="story-sound-btn" id="storySoundBtn" aria-label="Ativar som do vídeo" title="Ativar/Desativar som">
+                <svg class="sound-off-icon" id="soundOffIcon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/>
+                </svg>
+                <svg class="sound-on-icon" id="soundOnIcon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Video Player -->
+            <video class="hero-video" id="heroVideo" autoplay muted playsinline poster="assets/banner_9_16.jpg">
+              <source id="heroVideoSource" src="assets/video1.mp4" type="video/mp4">
               <img src="assets/banner_9_16.jpg" alt="Atual Confecções - Moda e Revenda">
             </video>
 
+            <!-- Stories Navigation Arrows -->
+            <button class="story-nav-btn story-prev-btn" id="storyPrevBtn" aria-label="Vídeo anterior">‹</button>
+            <button class="story-nav-btn story-next-btn" id="storyNextBtn" aria-label="Próximo vídeo">›</button>
+
+            <!-- Dynamic Floating Badge adapting to each video -->
             <div class="floating-badge">
-              <div class="floating-badge-icon">
+              <div class="floating-badge-icon" id="storyBadgeIcon">
                 <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div class="floating-badge-text">
-                <h5>Qualidade & Caimento</h5>
-                <p>Peças de qualidade garantida. Modelagem para todos os tamanhos</p>
+                <h5 id="storyBadgeTitle">Qualidade & Modelagem</h5>
+                <p id="storyBadgeDesc">Peças jeans anatômicas com caimento impecável do 36 ao plus size</p>
               </div>
             </div>
           </div>
@@ -186,7 +223,7 @@
           </div>
           <div class="trust-text">
             <h5>Sem Investimento Inicial</h5>
-            <p>Pague apenas o que vender no consignado</p>
+            <p>Entrega agendada na sua casa pelos nossos representantes</p>
           </div>
         </div>
 
@@ -207,101 +244,196 @@
           <div class="trust-icon">
             <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <div class="trust-text">
-            <h5>Modelo de negócio simplificado</h5>
-            <p>Vendedores e estoque garantido para suas vendas</p>
+            <h5>60 Dias para Vender</h5>
+            <p>30% de lucro garantido e acerto só do que vendeu</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Lookbook / Coleções de Jeans das Clientes -->
+  <!-- Catálogo de Produtos: Jeanswear e Enxovais Separados -->
   <section class="section" id="colecoes">
     <div class="container">
       <div class="section-header reveal">
-        <span class="badge-tag">Conheça algumas de nossas peças</span>
-        <h2>Coleção Jeans & Alfaiataria Feminina</h2>
-        <p>Modelagens anatômicas desenvolvidas para valorizar as curvas e vestir do tamanho convencional ao plus size
-          com extremo conforto.</p>
+        <span class="badge-tag">Nosso Catálogo Completo</span>
+        <h2>Conheça Nossos Produtos</h2>
+        <p>Duas linhas de produtos consagradas no modelo 100% consignado: moda feminina de fabricação própria e enxovais completos para a casa, prontas para você revender e lucrar sem desembolsar nada.</p>
       </div>
 
-      <div class="lookbook-grid">
-        <!-- Foto 1: Plus Size Modeladora -->
-        <div class="lookbook-card card-3d reveal reveal-delay-1" data-tilt>
-          <div class="lookbook-img-wrap">
-            <img src="assets/foto1.jpg" alt="Calça Jeans Skinny Modeladora Plus Size Atual Confecções">
-            <span class="lookbook-badge">Plus Size</span>
+      <!-- SUBSEÇÃO 1: JEANSWEAR & MODA FEMININA -->
+      <div class="catalog-category-block" id="categoria-jeans">
+        <div class="category-header reveal">
+          <div class="category-title-badge">
+            <span class="badge-tag">Moda & Vestuário</span>
           </div>
-          <div class="lookbook-body">
-            <h4>Jeans Skinny de todos os tamanhos</h4>
-            <p>Cintura alta com elastano premium, bolsos funcionais e caimento anatômico modelador.</p>
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Jeans%20Skinny%20Plus%20Size%20(Foto%201)!"
-              target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
-          </div>
+          <h3 class="category-main-title">Coleção Jeans e Alfaiataria Feminina</h3>
+          <p class="category-subtitle">Modelagens anatômicas desenvolvidas para valorizar as curvas e vestir do tamanho 36 ao plus size com extremo conforto, caimento impecável e tecidos com elastano premium.</p>
         </div>
 
-        <!-- Foto 2: Cigarrete Lavagem Clara -->
-        <div class="lookbook-card card-3d reveal reveal-delay-2" data-tilt>
-          <div class="lookbook-img-wrap">
-            <img src="assets/foto2.jpg" alt="Calça Jeans Skinny Lavagem Clara com Salto">
-            <span class="lookbook-badge">Destaque</span>
+        <div class="lookbook-grid">
+          <!-- Foto 1: Plus Size Modeladora -->
+          <div class="lookbook-card card-3d reveal reveal-delay-1" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/foto1.jpg" alt="Calça Jeans Skinny Modeladora Plus Size Atual Confecções">
+              <span class="lookbook-badge">Plus Size</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Jeans Skinny de todos os tamanhos</h4>
+              <p>Cintura alta com elastano premium, bolsos funcionais e caimento anatômico modelador.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Jeans%20Skinny%20Plus%20Size%20(Foto%201)!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+            </div>
           </div>
-          <div class="lookbook-body">
-            <h4>Skinny Lavagem</h4>
-            <p>Lavagem clássica, cós anatômico e elastano que abraça o corpo.</p>
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Skinny%20Lavagem%20Clara%20(Foto%202)!"
-              target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
-          </div>
-        </div>
 
-        <!-- Foto 3: Wide Leg Alfaiataria Bege -->
-        <div class="lookbook-card card-3d reveal reveal-delay-3" data-tilt>
-          <div class="lookbook-img-wrap">
-            <img src="assets/foto3.jpg" alt="Calça Wide Leg Alfaiataria">
-            <span class="lookbook-badge">Tendência</span>
+          <!-- Foto 2: Cigarrete Lavagem Clara -->
+          <div class="lookbook-card card-3d reveal reveal-delay-2" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/foto2.jpg" alt="Calça Jeans Skinny Lavagem Clara com Salto">
+              <span class="lookbook-badge">Destaque</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Skinny Lavagem Clara</h4>
+              <p>Lavagem clássica, cós anatômico e elastano que abraça o corpo com conforto total.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Skinny%20Lavagem%20Clara%20(Foto%202)!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+            </div>
           </div>
-          <div class="lookbook-body">
-            <h4>Wide Leg</h4>
-            <p>Alfaiataria moderna em tom neutro, corte reto sofisticado que alonga e veste do casual ao chique.</p>
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Wide%20Leg%20Areia%20(Foto%203)!"
-              target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
-          </div>
-        </div>
 
-        <!-- Foto 4: Flare Tons Terrosos -->
-        <div class="lookbook-card card-3d reveal reveal-delay-4" data-tilt>
-          <div class="lookbook-img-wrap">
-            <img src="assets/foto4.jpg" alt="Calça Flare Terrosa / Caramelo">
-            <span class="lookbook-badge">Elegância</span>
+          <!-- Foto 3: Wide Leg Alfaiataria Bege -->
+          <div class="lookbook-card card-3d reveal reveal-delay-3" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/foto3.jpg" alt="Calça Wide Leg Alfaiataria">
+              <span class="lookbook-badge">Tendência</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Wide Leg Alfaiataria</h4>
+              <p>Alfaiataria moderna em tom neutro, corte reto sofisticado que alonga e veste com elegância.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Wide%20Leg%20Areia%20(Foto%203)!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+            </div>
           </div>
-          <div class="lookbook-body">
-            <h4>Flare</h4>
-            <p>Modelagem flare com abertura suave na barra, caimento estruturado e cores elegantes.</p>
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Flare%20Terracota%20(Foto%204)!"
-              target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
-          </div>
-        </div>
 
-        <!-- Foto 5: Wide Leg Casual Streetwear -->
-        <div class="lookbook-card card-3d reveal reveal-delay-5" data-tilt>
-          <div class="lookbook-img-wrap">
-            <img src="assets/foto5.jpg" alt="Calça Jeans Wide Leg Estilo Streetwear">
-            <span class="lookbook-badge">Urbano</span>
+          <!-- Foto 4: Flare Tons Terrosos -->
+          <div class="lookbook-card card-3d reveal reveal-delay-4" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/foto4.jpg" alt="Calça Flare Terrosa / Caramelo">
+              <span class="lookbook-badge">Elegância</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Flare Terracota</h4>
+              <p>Modelagem flare com abertura suave na barra, caimento estruturado e cores em alta na estação.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Flare%20Terracota%20(Foto%204)!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+            </div>
           </div>
-          <div class="lookbook-body">
-            <h4>Wide Leg Streetwear</h4>
-            <p>Jeans macio de alta durabilidade, caimento solto e despojado que é sucesso absoluto de vendas.</p>
-            <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Wide%20Leg%20Streetwear%20(Foto%205)!"
-              target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+
+          <!-- Foto 5: Wide Leg Casual Streetwear -->
+          <div class="lookbook-card card-3d reveal reveal-delay-5" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/foto5.jpg" alt="Calça Jeans Wide Leg Estilo Streetwear">
+              <span class="lookbook-badge">Urbano</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Wide Leg Streetwear</h4>
+              <p>Jeans macio de alta durabilidade, caimento solto e despojado que é sucesso absoluto de vendas.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20modelo%20Wide%20Leg%20Streetwear%20(Foto%205)!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e cores</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Divisor Decorativo -->
+      <div class="catalog-divider reveal"></div>
+
+      <!-- SUBSEÇÃO 2: CAMA, MESA E BANHO (ENXOVAIS) -->
+      <div class="catalog-category-block" id="categoria-enxovais">
+        <div class="category-header reveal">
+          <div class="category-title-badge">
+            <span class="badge-tag gold">Linha Casa & Decoração</span>
+          </div>
+          <h3 class="category-main-title">Coleção Enxovais (Cama, Mesa e Banho)</h3>
+          <p class="category-subtitle">Peças selecionadas para transformar e aconchegar o lar com sofisticação: tecidos de toque macio, estampas modernas, cortinas com caimento impecável e mantas térmicas.</p>
+        </div>
+
+        <div class="lookbook-grid">
+          <!-- Enxoval 1: Jogo de Lençol Confort -->
+          <div class="lookbook-card card-3d reveal reveal-delay-1" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/enxoval-lencol.jpg" alt="Jogo de Lençol Casal Atual Confecções">
+              <span class="lookbook-badge">Cama</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Jogo de Lençol Confort</h4>
+              <p>Toque macio com estampas modernas e alta durabilidade, ideal para noites confortáveis e elegantes.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20Jogo%20de%20Len%C3%A7ol%20da%20linha%20de%20Enxoval!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver estampas e tamanhos</a>
+            </div>
+          </div>
+
+          <!-- Enxoval 2: Cortina Decorativa -->
+          <div class="lookbook-card card-3d reveal reveal-delay-2" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/enxoval-cortina.jpg" alt="Cortina Decorativa para Sala e Quarto">
+              <span class="lookbook-badge">Decoração</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Cortinas Decorativas</h4>
+              <p>Tecido encorpado com caimento elegante, perfeito para transformar a iluminação da sala e do quarto.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20das%20Cortinas%20da%20linha%20de%20Enxoval!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver modelos e medidas</a>
+            </div>
+          </div>
+
+          <!-- Enxoval 3: Manta para Sofá -->
+          <div class="lookbook-card card-3d reveal reveal-delay-3" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/enxoval-manta.jpg" alt="Manta para Sofá e Poltrona">
+              <span class="lookbook-badge">Sala de Estar</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Mantas para Sofá</h4>
+              <p>Textura aconchegante com acabamento em franjas, protegendo o estofado e valorizando a decoração do lar.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20da%20Manta%20para%20Sof%C3%A1%20da%20linha%20de%20Enxoval!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver cores disponíveis</a>
+            </div>
+          </div>
+
+          <!-- Enxoval 4: Jogo de Tapetes -->
+          <div class="lookbook-card card-3d reveal reveal-delay-4" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/enxoval-tapete.jpg" alt="Jogo de Tapetes Artesanais para Cozinha e Banheiro">
+              <span class="lookbook-badge">Mesa & Banho</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Jogo de Tapetes para Casa</h4>
+              <p>Peças resistentes, antiderrapantes e com acabamento de alto padrão para cozinha, banheiro e corredores.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20do%20Jogo%20de%20Tapetes%20da%20linha%20de%20Enxoval!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver conjuntos e cores</a>
+            </div>
+          </div>
+
+          <!-- Enxoval 5: Travesseiros Soft Dream -->
+          <div class="lookbook-card card-3d reveal reveal-delay-5" data-tilt>
+            <div class="lookbook-img-wrap">
+              <img src="assets/enxoval-travesseiro.jpg" alt="Travesseiro Macio Antialérgico">
+              <span class="lookbook-badge">Conforto</span>
+            </div>
+            <div class="lookbook-body">
+              <h4>Travesseiros Soft Dream</h4>
+              <p>Suporte anatômico, enchimento macio e tecnologia antialérgica para proporcionar um sono relaxante.</p>
+              <a href="https://wa.me/5567992386878?text=Ol%C3%A1%2C%20gostei%20dos%20Travesseiros%20da%20linha%20de%20Enxoval!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver detalhes e kits</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -416,47 +548,43 @@
         <div class="resale-content reveal">
           <span class="badge-tag gold">Oportunidade de Renda Própria</span>
           <h2>Como Funciona a Revenda Consignada da Atual?</h2>
-          <p>Você não precisa gastar muito investimento em estoque, ter capital de giro nem arriscar dinheiro do seu
-            bolso. Nós fornecemos as
-            peças e você ganha comissão em cada venda realizada.</p>
+          <p>Você recebe as peças na sua casa prontas para você revender e ter seu lucro, sem arriscar dinheiro do seu bolso. Nós fornecemos os produtos de jeans e enxoval e você garante 30% de lucro líquido!</p>
 
           <div class="steps-list">
             <div class="step-card card-3d reveal reveal-delay-1" data-tilt>
               <div class="step-number">1</div>
               <div class="step-text">
                 <h4>Cadastro Simples e Rápido</h4>
-                <p>Entre em contato pelo WhatsApp, faça seu cadastro e reserve o seu mostruário.</p>
+                <p>Entre em contato pelo WhatsApp, envie seus dados para análise e faça seu cadastro sem burocracia.</p>
               </div>
             </div>
 
             <div class="step-card card-3d reveal reveal-delay-2" data-tilt>
               <div class="step-number">2</div>
               <div class="step-text">
-                <h4>Receba os produtos</h4>
-                <p>Você recebe as peças etiquetadas e prontas para oferecer às suas amigas, colegas e clientes.</p>
+                <h4>Entrega Agendada na Sua Casa</h4>
+                <p>Após o cadastro aprovado, nossos representantes entram em contato para agendar a entrega dos produtos na sua residência, com peças etiquetadas e prontas para revenda.</p>
               </div>
             </div>
 
             <div class="step-card card-3d reveal reveal-delay-3" data-tilt>
               <div class="step-number">3</div>
               <div class="step-text">
-                <h4>Venda e Fique com o Lucro</h4>
-                <p>Revenda pelo preço tabelado, obtenha sua margem de lucro e pague apenas o que vender no acerto de
-                  contas.</p>
+                <h4>60 Dias em Média para Vender</h4>
+                <p>Nosso prazo do dia da entrega até o acerto é de cerca de 60 dias. Nesse tempo você vende, recebe de suas clientes com calma e prepara o acerto para a data marcada.</p>
               </div>
             </div>
 
             <div class="step-card card-3d reveal reveal-delay-4" data-tilt>
               <div class="step-number">4</div>
               <div class="step-text">
-                <h4>Devolução sem Prejuízo</h4>
-                <p>O que não for vendido dentro do ciclo pode ser devolvido ou trocado por novas coleções para girar
-                  sempre.</p>
+                <h4>Acerto com 30% de Lucro Garantido</h4>
+                <p>Na data marcada, o representante volta: você só paga o que vendeu, ganha 30% de lucro e o que não for vendido é devolvido, sem nenhum custo para você!</p>
               </div>
             </div>
           </div>
 
-          <a href="https://wa.me/5567992386878?text=Ol%C3%A1!%20Quero%20fazer%20meu%20cadastro%20para%20revender%20consignado."
+          <a href="https://wa.me/5567992386878?text=Ol%C3%A1!%20Quero%20fazer%20meu%20cadastro%20para%20revender%20consignado%20jeans%20e%20enxoval."
             target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path
@@ -475,16 +603,12 @@
       <div class="about-grid">
         <div class="about-text reveal">
           <span class="badge-tag">Quem Somos</span>
-          <h2>Compromisso com Qualidade, Moda e Empoderamento</h2>
+          <h2>Compromisso com Qualidade, Variedade e Oportunidade</h2>
           <p>
-            A <strong>Atual Confecções</strong> nasceu com uma missão clara: aliar o talento da confecção de vestuário e
-            jeanswear à oportunidade real de geração de renda para mulheres de Campo Grande, do estado de Mato
-            Grosso do Sul e outras regiões do Brasil.
+            A <strong>Atual Confecções</strong> nasceu com uma missão clara: aliar peças de qualidade no jeanswear e artigos completos de enxoval (cama, mesa e banho) à oportunidade real de geração de renda para mulheres de Campo Grande e de todo o estado de Mato Grosso do Sul.
           </p>
           <p>
-            Acreditamos que o empreendedorismo feminino transforma lares e constrói futuros. Por isso, oferecemos
-            produtos de fabricação com corte moderno, matéria-prima durável e um modelo de negócio transparente e
-            acolhedor.
+            Acreditamos que o empreendedorismo feminino transforma lares e constrói futuros. Por isso, oferecemos produtos com acabamento impecável, alta procura comercial e um modelo de consignação 100% transparente, seguro e acolhedor.
           </p>
 
           <div class="about-features">
@@ -583,7 +707,7 @@
               </div>
               <div class="contact-info-text">
                 <h5>Localização & Região</h5>
-                <p>Estamos em Campo Grande, Mato Grosso do Sul e atendemos todo o Brasil.</p>
+                <p>Estamos em Campo Grande e atendemos com entregas e representantes em todo o Mato Grosso do Sul.</p>
               </div>
             </div>
 
@@ -632,17 +756,17 @@
             </div>
 
             <div class="form-group">
-              <label for="leadCity" class="form-label">Sua Cidade / Bairro</label>
+              <label for="leadCity" class="form-label">Sua Cidade / Bairro (MS)</label>
               <input type="text" id="leadCity" class="form-control" placeholder="Ex: Campo Grande - MS" required>
             </div>
 
             <div class="form-group">
               <label for="leadInterest" class="form-label">Assunto de Interesse</label>
               <select id="leadInterest" class="form-control" required>
-                <option value="Quero ser Revendedora Consignada">Quero ser Revendedora Consignada</option>
-                <option value="Quero Comprar Peças para Uso">Quero Comprar Peças para Uso</option>
-                <option value="Dúvidas sobre o Catálogo">Dúvidas sobre o Catálogo</option>
-                <option value="Parcerias e Representação">Parcerias e Representação</option>
+                <option value="Quero ser Revendedora Consignada (Jeans e Enxovais)">Quero ser Revendedora Consignada (Jeans e Enxovais)</option>
+                <option value="Quero saber mais sobre a Coleção Jeans">Quero saber mais sobre a Coleção Jeans</option>
+                <option value="Quero saber mais sobre os Enxovais (Cama, Mesa e Banho)">Quero saber mais sobre os Enxovais (Cama, Mesa e Banho)</option>
+                <option value="Dúvidas sobre o Prazo de 60 Dias e Acerto">Dúvidas sobre o Prazo de 60 Dias e Acerto</option>
               </select>
             </div>
 
@@ -682,33 +806,31 @@
             </svg>
           </button>
           <div class="faq-answer">
-            <p>Não! Nosso modelo principal é o consignado, o que significa que você pega as peças sem desembolsar nenhum
-              valor adiantado. No final do período combinado, você acerta as peças que vendeu e devolve as que não foram
-              comercializadas.</p>
+            <p>Não! Nosso modelo é 100% consignado: você não precisa investir nenhum centavo adiantado. Você recebe as peças na sua casa e só paga o que vender no acerto!</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-delay-2">
           <button class="faq-question">
-            <span>Qual a margem de lucro que posso obter?</span>
+            <span>Qual a margem de lucro e qual o prazo para vender?</span>
             <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-answer">
-            <p>Nossas revendedoras lucram entre 30% e 40% sobre cada peça vendida, dependendo de como será o formato que você quer atuar em suas vendas.</p>
+            <p>Você ganha <strong>30% de lucro</strong> garantido! O nosso prazo do dia da entrega até o acerto é de cerca de <strong>60 dias</strong> em média. Nesse tempo, você vende, recebe das suas clientes com calma e só acerta o que foi vendido no dia marcado.</p>
           </div>
         </div>
 
         <div class="faq-item reveal reveal-delay-3">
           <button class="faq-question">
-            <span>Vocês atendem apenas Campo Grande ou outras cidades também?</span>
+            <span>Vocês atendem apenas Campo Grande ou todo o Mato Grosso do Sul?</span>
             <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-answer">
-            <p>Atendemos Campo Grande e cidades do interior de Mato Grosso do Sul, além de outros estados do Brasil. Consulte sua região pelo nosso WhatsApp.</p>
+            <p>Atendemos toda a capital Campo Grande e cidades de todo o estado de <strong>Mato Grosso do Sul</strong> com entrega agendada na sua residência e representantes dedicados. Fale conosco no WhatsApp para agendar seu mostruário!</p>
           </div>
         </div>
 
@@ -753,10 +875,10 @@
             </div>
           </div>
           <p>
-            Moda feminina, jeanswear, moda fitness e catálogo completo com revenda consignada em Campo Grande - MS.
+            Revenda consignada de Jeans e Enxovais (Cama, Mesa e Banho) em Campo Grande e todo o estado de Mato Grosso do Sul.
           </p>
           <p>
-            Ajudando mulheres a conquistar sua independência financeira.
+            Ajudando mulheres a conquistar sua independência financeira sem investimento inicial.
           </p>
         </div>
 
@@ -765,7 +887,7 @@
             <h4>Navegue no site</h4>
             <ul class="footer-links">
               <li><a href="#inicio">Início</a></li>
-              <li><a href="#colecoes">Coleção Jeans</a></li>
+              <li><a href="#colecoes">Jeans & Enxovais</a></li>
               <li><a href="#revenda">Revenda Consignada</a></li>
               <li><a href="#sobre">Sobre Nós</a></li>
               <li><a href="#contato">Fale Conosco</a></li>
